@@ -1,30 +1,31 @@
 <script lang="ts">
-	let { children } = $props();
+	let { location } = $props();
 </script>
 
-<div class="">
+<a href={`https://what3words.com/${location}`} target="_blank">
 	<p class="slashes">///</p>
-	<p class="location">{@render children()}</p>
-</div>
+	<p class="location">{location}</p>
+</a>
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 	* {
 		--what3words-red: #e11f26;
 	}
-	div {
+	a {
 		padding: 6px 10px;
 		box-shadow: inset 0px -3px 0px var(--what3words-red);
 		display: flex;
 		width: fit-content;
 		background-color: white;
+		text-decoration: none;
 	}
 
-	div > .slashes {
+	a > .slashes {
 		color: var(--what3words-red);
 	}
 
-	div > .location {
+	a > .location {
 		color: black;
 	}
 

@@ -4,4 +4,4 @@
 
 <h1>what3words-svelte</h1>
 
-<What3words>filled.count.soap</What3words>
+<What3words location={'filled.count.soap'} />
