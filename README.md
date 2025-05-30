@@ -6,7 +6,7 @@ A [Svelte](https://svelte.dev/) component to display a [what3words](https://what
 
 ```svelte
 <script lang="ts">
-	import What3words from 'what3words-svelte';
+	import { What3words } from 'what3words-svelte';
 </script>
 
 <What3words>filled.count.soap</What3words>
