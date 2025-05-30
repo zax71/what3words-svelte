@@ -6,6 +6,14 @@ A [Svelte](https://svelte.dev/) component to display a [what3words](https://what
 
 ## Usage
 
+Install `what3words-svelte` with your favorite `npm` wrapper (I am partial to [`pnpm`](https://pnpm.io/))
+
+```console
+user@example:~$ pnpm i what3words-svelte
+```
+
+Then add the following to your `+page.svelte`
+
 ```svelte
 <script lang="ts">
 	import { What3words } from 'what3words-svelte';
